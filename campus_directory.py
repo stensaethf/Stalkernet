@@ -151,7 +151,9 @@ campus_directory = "https://apps.carleton.edu/campus/directory/?first_name=%s&se
 # Use 'with' to ensure the session context is closed after use.
 payload = {"username" : sys.argv[1], "password" : sys.argv[2]}
 with requests.Session() as s:
-    auth = ('stensaethf@carleton.edu', 'discombobulated1')
+    CARLETONedu = Xx # Enter
+    CARLETONpass = Xx # Enter
+    auth = (CARLETONedu, CARLETONpass)
     s.post("https://apps.carleton.edu/login/", auth=auth)
     # print the html returned or something more intelligent to see if it's a successful login page.
 
